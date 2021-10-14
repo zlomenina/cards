@@ -1,0 +1,123 @@
+    /*General Style*/
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+
+.fp-tableCell {
+    display: block;
+}
+
+.fp-scrollable {
+    height: 100%;
+}
+
+/*First Page - main card*/
+
+/*Links*/
+#rider-waite {
+    font-family:'Geo';
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 
+}
+
+
+/*Main tarot card with cover image*/
+#main-card.rider-waite {
+    max-width:125px;
+    max-height:auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius:5px;
+}
+
+    #main-card.rider-waite .front-img {
+
+    max-width:125px;
+    max-height:auto;
+
+    }
+
+.cover {
+    width:125px;
+    max-height:auto;
+    position: absolute;
+    left:0px;
+    top:0px;
+    display: none;
+    background:#7e76f6;
+    transition:0.3s;
+}
+
+
+.reload:hover .cover {
+    display: table;
+}
+
+#card-name {
+    opacity: 0;
+    height: 25px;
+    font-size: 1.2em;
+    font-family:'Geo';
+    font-weight:bold;
+}
+
+
+/*Description with small tarot card*/
+.card-description {
+    display: table;
+    height: 100%;
+    text-align: left;
+    font-size: 1.05em;
+    font-family:'Geo';
+
+}
+
+
+.flip {
+    transform: rotate(180deg);
+}
+
+/*Spinner*/
+.spinner {
+  opacity: 0;
+  margin: auto;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #b6b6ff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
